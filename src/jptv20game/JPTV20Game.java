@@ -23,7 +23,9 @@ public class JPTV20Game {
         Scanner scanner = new Scanner(System.in);
         int number = random.nextInt(10);
         System.out.print("Программа задумала число от 0 до 9, отгадай какое?: ");
-        for(int i = 0; i < 5; i++){
+//        for(int i = 0; i < 5; i++){
+        int i = 0;
+        while(true){
             int userNumber = scanner.nextInt();
             if(userNumber == number){
                 System.out.println("Ура! Ты выиграл!!!");
@@ -35,6 +37,7 @@ public class JPTV20Game {
                     System.out.println(":(, проиграл, задумано: "+number);
                 }
             }
+            i++;
         }
     }
     
